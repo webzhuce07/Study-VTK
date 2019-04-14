@@ -8,19 +8,13 @@ For more information visit: http://blog.csdn.net/webzhuce
 #include <vtkImageData.h>
 #include <vtkStructuredPoints.h>
 #include <vtkStructuredPointsReader.h>
-//#include <vtkVolumeRayCastCompositeFunction.h>
-#include <vtkGPUVolumeRayCastMapper.h>
-//#include <vtkVolumeRayCastMapper.h>
 #include <vtkColorTransferFunction.h>
 #include <vtkPiecewiseFunction.h>
 #include <vtkRenderer.h>
 #include <vtkRenderWindow.h>
 #include <vtkRenderWindowInteractor.h>
 #include <vtkVolumeProperty.h>
-#include <vtkAxesActor.h>
-#include <vtkImageShiftScale.h>
-#include <vtkImageCast.h>
-#include <vtkFixedPointVolumeRayCastMapper.h>
+#include <vtkSmartVolumeMapper.h>
 
 //测试：../data/mummy.128.vtk
 int main(int argc, char *argv[])
@@ -30,14 +24,9 @@ int main(int argc, char *argv[])
 	reader->SetFileName("E:\\TestData\\mummy.128.vtk");
 	reader->Update();
 
-	//vtkSmartPointer<vtkVolumeRayCastCompositeFunction> rayCastFun = 
-		//vtkSmartPointer<vtkVolumeRayCastCompositeFunction>::New();
-
-	vtkSmartPointer<vtkFixedPointVolumeRayCastMapper> volumeMapper =
-		vtkSmartPointer<vtkFixedPointVolumeRayCastMapper>::New();
+	vtkSmartPointer<vtkSmartVolumeMapper> volumeMapper =
+		vtkSmartPointer<vtkSmartVolumeMapper>::New();
 	volumeMapper->SetInputData(reader->GetOutput());
-	//volumeMapper->SetVolumeRayCastFunction(rayCastFun);
-
 	//设置光线采样距离
 	//volumeMapper->SetSampleDistance(volumeMapper->GetSampleDistance()*4);
 	//设置图像采样步长
