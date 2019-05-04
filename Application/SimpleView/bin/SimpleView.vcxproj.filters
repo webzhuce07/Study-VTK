@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="F:\Projects\third\VTKExample\SimpleView\main.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Projects\third\VTKExample\SimpleView\SimpleView.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Projects\third\VTKExample\SimpleView\bin\qrc_icons.cpp">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Projects\third\VTKExample\SimpleView\bin\SimpleView_autogen\moc_compilation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="F:\Projects\third\VTKExample\SimpleView\SimpleView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Projects\third\VTKExample\SimpleView\bin\ui_SimpleView.h">
+      <Filter>Generated</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\Projects\third\VTKExample\SimpleView\CMakeLists.txt" />
+    <CustomBuild Include="F:\Projects\third\VTKExample\SimpleView\SimpleView.ui">
+      <Filter>Resources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\Projects\third\VTKExample\SimpleView\Icons\icons.qrc">
+      <Filter>Resources</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{E43030D5-6071-38EA-B432-FD2FBDB93C4E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{66C2567B-D288-3947-88E6-D11427C7F919}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{6D558596-E540-33E3-8A09-C67FE2C8C6BF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated">
+      <UniqueIdentifier>{1C3C6124-3015-31DB-B7E2-7EA3CF11183B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

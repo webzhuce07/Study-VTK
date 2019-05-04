@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.6)
+PROJECT (BoolOperation)
+FIND_PACKAGE(VTK REQUIRED)
+INCLUDE(${VTK_USE_FILE})
+ADD_EXECUTABLE(BoolOperation    main.cxx vtkBezierSurfaceSource.h vtkBezierSurfaceSource.cpp vtkBezierSurfaceWidget.cpp vtkBezierSurfaceWidget.h)
+TARGET_LINK_LIBRARIES(BoolOperation ${VTK_LIBRARIES})

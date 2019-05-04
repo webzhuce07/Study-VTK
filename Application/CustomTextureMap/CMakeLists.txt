@@ -1,0 +1,6 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
+PROJECT(TextureMap)
+FIND_PACKAGE(VTK REQUIRED)
+INCLUDE(${VTK_USE_FILE})
+ADD_EXECUTABLE(TextureMap   textureMap.cxx  vtkTextureMapToSurface.h vtkTextureMapToSurface.cpp  vtkTextureMapToIrregularity.h vtkTextureMapToIrregularity.cpp)
+TARGET_LINK_LIBRARIES(TextureMap ${VTK_LIBRARIES})
