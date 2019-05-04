@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+PROJECT (AzimuthExmape)
+FIND_PACKAGE(VTK REQUIRED)
+INCLUDE(${VTK_USE_FILE})
+ADD_EXECUTABLE(AzimuthExmape  azimuthExmape.cxx)
+TARGET_LINK_LIBRARIES(AzimuthExmape ${VTK_LIBRARIES})
