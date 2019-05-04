@@ -1,0 +1,5 @@
+﻿  Building Custom Rule F:/Projects/Apple/VTKExample/TexturedButtonWidget/src/CMakeLists.txt
+  CMake does not need to re-run because F:/Projects/Apple/VTKExample/TexturedButtonWidget/bin/CMakeFiles/generate.stamp is up-to-date.
+  TexturedButtonWidget.cpp
+  TexturedButtonWidget.vcxproj -> F:\Projects\Apple\VTKExample\TexturedButtonWidget\bin\Debug\TexturedButtonWidget.exe
+  TexturedButtonWidget.vcxproj -> F:/Projects/Apple/VTKExample/TexturedButtonWidget/bin/Debug/TexturedButtonWidget.pdb (Full PDB)
